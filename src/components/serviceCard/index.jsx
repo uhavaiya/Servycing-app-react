@@ -14,6 +14,7 @@ const CardContainer = styled.div`
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
   margin: 0.5em;
   margin-bottom: 1.3em;
+  
 `;
 
 const TopContainer = styled.div`
@@ -37,6 +38,7 @@ const ContentContainer = styled.div`
   align-items: flex-start;
   flex: 1;
   padding: 15px 14px;
+  
 `;
 
 const BottomContainer = styled.div`
@@ -57,12 +59,12 @@ const Title = styled.h2`
   text-align: start;
 `;
 
-const SpecialistName = styled.h4`
-  margin: 0;
-  color: rgba(151, 151, 151, 1);
-  font-size: 12px;
-  font-weight: 400;
-`;
+// const SpecialistName = styled.h4`
+//   margin: 0;
+//   color: rgba(151, 151, 151, 1);
+//   font-size: 12px;
+//   font-weight: 400;
+// `;
 
 const RatingContainer = styled.div`
   display: flex;
@@ -99,7 +101,7 @@ export function ServiceCard(props) {
       <ContentContainer>
         <Title>{title}</Title>
         <Marginer direction="vertical" margin={10} />
-        <SpecialistName>{specialist.fullName}</SpecialistName>
+        {/* <SpecialistName>{specialist.fullName}</SpecialistName> */}
       </ContentContainer>
       <BottomContainer>
         <RatingContainer>
